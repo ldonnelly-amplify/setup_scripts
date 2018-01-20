@@ -1,0 +1,67 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;\red27\green31\blue34;
+\red255\green255\blue255;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c0\c0;\cssrgb\c14118\c16078\c18039;
+\csgray\c100000;}
+\margl1440\margr1440\vieww11940\viewh19580\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 #Asiaq Setup Instructions PART 1\
+#{\field{\*\fldinst{HYPERLINK "https://gist.github.com/jconstance-amplify/efbd43990d8af5a8e55885891933bec5"}}{\fldrslt https://gist.github.com/jconstance-amplify/efbd43990d8af5a8e55885891933bec5}}\
+\
+#install pip\
+sudo easy_install pip\
+\
+#Setup pip\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 \cb3 \CocoaLigature0 Cat << boys>\
+ \cf4 \expnd0\expndtw0\kerning0
+\CocoaLigature1 [global]\
+\pard\pardeftab720\sl380\partightenfactor0
+\cf4 index-url = https://python-repo.mc.wgenhq.net/pypi/simple\cf2 \kerning1\expnd0\expndtw0 \CocoaLigature0  ~/.pip/pip.conf\
+boys\cf0 \cb1 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+#Install Node.js\
+echo \'93Hey new astronaut! YOU MUST FIRST GO TO nodejs.org, click install, install nodejs, then continue.\'94\
+\
+#Install Homebrew\
+cd ~ \
+/usr/bin/ruby -e \'93$(curl -fsSL http://raw.githubusercontent.com/Homebrew/install/master/install)\'94\
+brew doctor\
+\
+#Install Ruby\
+brew install ruby\
+\
+#Install Python\
+brew install python\cf2 \cb3 \CocoaLigature0 \
+\pard\pardeftab720\sl380\partightenfactor0
+\
+#Install git\
+brew install git\
+#Generate SSH key for GitHub\
+echo \'93Ready? We are generating SSH keys for GitHub access now\'94\
+echo \'93You don\'92t need a file for the ssh key. You also don\'92t need a passphrase for the ssh key\'94\
+ssh-keygen -t rsa\
+pbcopy < ~/.ssh/id_rsa.pub\
+echo \'93Your public key is now copied to your clipboard\'94\
+echo \'93You must now go to Github, then settings, then go to \'91SSH and GPG keys\'92 and \'91make a new ssh key\'92\'94  \
+\
+\
+\
+#Setup Virtualenvwrapper\
+\pard\pardeftab720\sl380\partightenfactor0
+\cb5 pip install --user virtualenv virtualenvwrapper\
+echo 'export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python\
+source "$HOME/Library/Python/2.7/bin/virtualenvwrapper.sh"' >> ~/.bash_profile`\
+\
+\
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \CocoaLigature1 \
+\
+\
+}
